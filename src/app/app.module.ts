@@ -1,15 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { CarouselModule } from 'ngx-bootstrap';
+
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ProductComponent } from './product/product.component';
+import { StarsComponent } from './stars/stars.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    SearchComponent,
+    CarouselComponent,
+    ProductComponent,
+    StarsComponent
   ],
   imports: [
+  	CarouselModule.forRoot(),
     BrowserModule
   ],
   providers: [],
